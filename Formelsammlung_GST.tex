@@ -1,0 +1,56 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+
+\title{Formelsammlung GST}
+\date{WS 2017/18}
+
+\begin{document}
+	\maketitle
+	\section{Bewegung}
+	\begin{align*}
+		s_b &= \frac{v_1^2 - v_0^2}{2b} \\
+		t_b &= \frac{v_1 - v_0}{b} \\
+		t_b &= \sqrt{\frac{2ds}{b}} \\
+		v_\mathrm{krit} &= \sqrt{\frac{2sab}{a+b}} \\
+		v_\mathrm{max,erf} &= \frac{T-\sqrt{T^2-4\kappa{}s}}{2\kappa} \text{ mit } \kappa = \frac{1}{2a}+\frac{1}{2b} \\
+	\end{align*}
+
+	\section{Fahren im Gleisbogen}
+	\begin{align*}
+		u_0 &= \frac{v^2 \cdot s_k}{g\cdot r} = 11,8\frac{V^2}{r} \\
+		V &= \sqrt{\frac{r\cdot(u+u_f)}{11,8}}
+	\end{align*}
+
+	\section{Entgleisungssicherheit}
+	\subsection{Gleisverwerfung (\textsc{Prud'homme})}
+	\begin{align*}
+		\lim\sum{}Y &= \kappa\left(10+\frac{Q_1+Q_2}{3}\right) \\
+		Q_1+Q_2 &= \sin\alpha\frac{v^2}{r}m+\cos\alpha{}mg \\
+						&\approx \frac{u}{s_k}\frac{v^2}{r}m+mg \\
+		\sum{}Y &= \cos\alpha\frac{v^2}{r}m-\sin\alpha{}mg \\
+						&\approx \frac{v^2}{r}m - \frac{u}{s_k}mg
+	\end{align*}
+
+	\subsection{Aufklettern des Spurkranzes}
+	\begin{align*}
+		Q_R &= \frac{h}{s_k} (\cos\alpha{}m\frac{v^2}{r}-\sin\alpha{}mg) + \frac{1}{2}(\cos\alpha{}mg + \sin\alpha{}\frac{v^2}{r}) \\
+		\frac{Y}{Q} &< 1,2 \text{ für } r\geq300\mathrm{m} \\
+		\frac{Y}{Q} &< 0,8 \text{ für } r<300\mathrm{m}
+	\end{align*}
+
+	\subsection{Umkippen (\textsc{Schramm})}
+	\begin{align*}
+		V &= \sqrt{\frac{96-127e}{h}r+85u} \\
+		e &= \frac{h}{10}-0,09 \\
+		V & \text{ Geschwindigkeit in }\frac{\mathrm{km}}{\mathrm{h}} \\
+		r & \text{ Radius in } \mathrm{m} \\
+		u & \text{ Überhöhung in } \mathrm{mm} \\
+		h & \text{ Höhe des Fahrzeugschwerpunkts in } \mathrm{m}\\
+	\end{align*}
+
+	\subsection{Grenzgeschwindigkeit für Entgleisung (\textsc{Schramm})}
+	$$ V_\mathrm{max} = 5\cdot\sqrt{r} $$
+
+\end{document}
