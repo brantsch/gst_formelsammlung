@@ -20,8 +20,10 @@
 	\section{Fahren im Gleisbogen}
 	\begin{align*}
 		u_0 &= \frac{v^2 \cdot s_k}{g\cdot r} = 11,8\frac{V^2}{r} \\
-		V_{\text{max}} &= \sqrt{\frac{r\cdot(u+u_f)}{11,8}} \text{ oder allgmein } V_{\text{max}} = 3.6 \cdot \sqrt{\frac{g\cdot r \cdot (u + u_f)}{s_k}} \\
-		u_f &= a_q \cdot \frac{s_k[mm]}{g}
+		V_{\text{max}} &= \sqrt{\frac{r\cdot(u+u_f)}{11,8}} \text{ oder allgemein } V_{\text{max}} = 3.6 \cdot \sqrt{\frac{g\cdot r \cdot (u + u_f)}{s_k}} \\
+		u_f &= a_q \cdot \frac{s_k[\mathrm{mm}]}{g} \\
+		a_q &= \frac{v^2}{r} - g\frac{u}{s_k} \\
+		u &= \frac{v^2 \cdot s_k}{g\cdot r} - a_q\frac{s_k}{g}
 	\end{align*}
 
 	\section{Entgleisungssicherheit}
@@ -36,7 +38,7 @@
 
 	\subsection{Aufklettern des Spurkranzes}
 	\begin{align*}
-		Q_R &= \frac{h}{s_k} (\cos\alpha{}m\frac{v^2}{r}-\sin\alpha{}mg) + \frac{1}{2}(\cos\alpha{}mg + \sin\alpha{}\frac{v^2}{r}) \\
+		Q_R &= \frac{h}{s_k} (\cos\alpha{}m\frac{v^2}{r}-\sin\alpha{}mg) + \frac{1}{2}(\cos\alpha{}mg + \sin\alpha{}\frac{v^2}{r}m) \\
 		\frac{Y}{Q} &< 1,2 \text{ für } r\geq300\mathrm{m} \\
 		\frac{Y}{Q} &< 0,8 \text{ für } r<300\mathrm{m}
 	\end{align*}
